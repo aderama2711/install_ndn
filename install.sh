@@ -1,4 +1,4 @@
-sudo apt install build-essential pkg-config python3-minimal libboost-all-dev libssl-dev libsqlite3-dev -y
+sudo apt install build-essential pkg-config python3-minimal libboost-all-dev libssl-dev libsqlite3-dev libpcap-dev libsystemd-dev
 git clone https://github.com/named-data/ndn-cxx
 cd ndn-cxx
 ./waf configure
@@ -6,7 +6,6 @@ sudo ./waf install
 cd ..
 echo "ndn-cxx installed!"
 
-sudo apt install libpcap-dev libsystemd-dev -y
 git clone --recursive https://github.com/named-data/NFD.git
 cd NFD
 ./waf configure
